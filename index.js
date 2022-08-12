@@ -5,6 +5,7 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.once('ready', () => {
 	console.log('Ready!');
+	client.user.setActivity('집 가고 싶어', { type: 'PLAYING' })
 });
 
 client.on('interactionCreate', async interaction => {
